@@ -61,6 +61,9 @@ es_prima(X):- progenitor(Z,X), progenitor(W,_), progenitor(P,Z), progenitor(P,W)
 es_tio(X):- progenitor(P,X), progenitor(P,Z), progenitor(Z,_), X \= Z, hombre(X).
 es_tia(X):- progenitor(P,X), progenitor(P,Z), progenitor(Z,_), X \= Z, mujer(X).
 
+es_hermano(X):- progenitor(Z,X), progenitor(Z,Y), hombre(X), X \= Y.
+es_hermana(X):- progenitor(Z,X), progenitor(Z,Y), mujer(X), X \= Y.
+
 % Reglas (X,Y)
 
 es_hijo_de(X,Y):- progenitor(Y,X), hombre(X).
