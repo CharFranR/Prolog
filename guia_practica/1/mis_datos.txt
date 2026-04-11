@@ -1,0 +1,5 @@
+Curso: Programacion Logica
+Docente: Ing. Claudia
+Proyecto: Prolog Tutor
+Hora: 1-2:40
+Fecha: lunes
