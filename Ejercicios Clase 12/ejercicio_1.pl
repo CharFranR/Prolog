@@ -1,11 +1,5 @@
 :- use_module(library(pce)).
 
-/*
- * Ejercicio 1: Ventana de dialogo para ingresar datos personales
- * Campos: nombres, apellidos, edad, carrera, anio de egreso
- * Muestra los datos en la Consola de Prolog
- */
-
 datos_personales :-
     new(Ventana, dialog('Datos Personales')),
     
